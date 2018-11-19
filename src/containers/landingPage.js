@@ -9,9 +9,9 @@ class LandingPage extends React.Component {
   render() {
     return(
       <div className="body">
-        <h2>Think you may be a sweet, cuddly doodle (golden, labra, or otherwise), but not sure?</h2>
-        <h3>Take the quiz and find out!</h3>
-        <button onClick={this.handleClick.bind(this)}>Yes!</button>
+        <h2>Think it may be snowing outside, but not quite sure?</h2>
+        <h3>Take this science-backed quiz to find out</h3>
+        <button onClick={this.handleClick.bind(this)}>Start!</button>
       </div>
     )
   }

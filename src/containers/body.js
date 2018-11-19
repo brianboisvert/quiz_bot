@@ -26,7 +26,22 @@ class Body extends React.Component {
     if (!this.state.slide) {
       return (
         <div className="body">
-          <LandingPage advance={this.advance} />
+          <div className="snowflakes" aria-hidden="true">
+            <div className="snowflake">❄</div>
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+            <div className="snowflake">❄</div>
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+            <div className="snowflake">❄</div>
+            <div className="snowflake">❅</div>
+            <div className="snowflake">❆</div>
+            <div className="snowflake">❄</div>
+
+          </div>
+          <div>
+            <LandingPage advance={this.advance} />
+          </div>
         </div>
       )
     } else if (this.state.slide <= QuestionArr.length) {
@@ -39,7 +54,7 @@ class Body extends React.Component {
     }
     else {
       return (
-        <div className="body">
+        <div>
           Hey
         </div>
       )
