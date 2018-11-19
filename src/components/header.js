@@ -4,7 +4,7 @@ const Header = (props) => {
 
   return(
     <div>
-      <h1>Are you a doodle?</h1>
+      <h1 className="header">Are you a doodle?</h1>
     </div>
   )
 }

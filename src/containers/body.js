@@ -25,21 +25,21 @@ class Body extends React.Component {
 
     if (!this.state.slide) {
       return (
-        <div>
+        <div className="body">
           <LandingPage advance={this.advance} />
         </div>
       )
     } else if (this.state.slide <= QuestionArr.length) {
       const currentQuestion =  QuestionArr[this.state.slide - 1]
       return (
-        <div>
+        <div className="body">
           <Question currentQuestion={currentQuestion} advance={this.advance} slide={this.state.slide} />
         </div>
       )
     }
     else {
       return (
-        <div>
+        <div className="body">
           Hey
         </div>
       )
