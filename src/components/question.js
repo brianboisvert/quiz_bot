@@ -1,5 +1,5 @@
 import React from 'react';
-import Answer from '../containers/answer';
+import Answer from './answer';
 
 
 const Question = (props) => {

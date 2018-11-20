@@ -1,6 +1,6 @@
 import React from 'react';
 import LandingPage from './landingPage';
-import Question from '../components/question';
+import Question from './question';
 import { QuestionArr } from '../questionArr.js';
 
 class Body extends React.Component {
@@ -30,7 +30,6 @@ class Body extends React.Component {
   }
 
   render() {
-console.log(this.state.response1);
     if (!this.state.slide) {
       return (
         <div className="body">

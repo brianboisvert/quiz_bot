@@ -143,13 +143,21 @@
 }
 
 /* NORMAL BODY */
+@keyframes header {
+  from {color: red;}
+  to {color: blue;}
+}
+
 .header {
   font-family: 'Indie Flower';
   text-align: center;
   margin: 0;
   padding-bottom: 1.5em;
   padding-top: 2em;
-
+  animation-name: header;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .body {
