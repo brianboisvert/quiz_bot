@@ -11,7 +11,7 @@ class LandingPage extends React.Component {
       <div className="body">
         <h2>Think it may snow, but want to be sure?</h2>
         <h3>Take this science-backed quiz to find out</h3>
-        <button onClick={this.handleClick.bind(this)}>Start!</button>
+        <button className="start" onClick={this.handleClick.bind(this)}>Start!</button>
       </div>
     )
   }

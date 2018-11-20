@@ -32,7 +32,7 @@
 .snowflake {
     position: fixed;
     top: -10%;
-    z-index: 999;
+    z-index: -1;
     user-select: none;
     cursor: default;
     animation-name: snowflakes-fall, snowflakes-shake;
@@ -143,9 +143,19 @@
 }
 
 /* NORMAL BODY */
-@keyframes header {
-  from {color: red;}
-  to {color: blue;}
+/* @keyframes header {
+  from {color: #668eab; */
+    /* transform: rotate(720deg); */
+/* }
+  to {color: #1b232b;}
+} */
+
+@keyframes Header {
+    100% { background-position: 100vw 0px; }
+}
+
+@keyframes Enlarge {
+    100% { transform: scale(1.2);}
 }
 
 .header {
@@ -153,15 +163,55 @@
   text-align: center;
   margin: 0;
   padding-bottom: 1.5em;
-  padding-top: 2em;
-  animation-name: header;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  padding-top: 4em;
+  background: linear-gradient(
+          120deg,
+          #1b232b 95%,
+          #dde5f4 5%
+      );
+  color: #dde5f4;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 4s Header linear infinite,
+  3s Enlarge ease alternate infinite;
 }
 
 .body {
   font-family: 'Indie Flower';
   text-align: center;
   font-size: .8em;
+}
+
+.start {
+  display: inline-block;
+  margin: 1em;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  background: none;
+  color: #1b232b;
+  font-weight: bold;
+  position: relative;
+  transition:color 0.25s ease;
+  border:3px solid #668eab;
+}
+
+.start:hover {
+  color:#1b232b;
+}
+
+.start::after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #dde5f4;
+  transform-origin:left;
+  transition: 0.25s ease;
+  z-index:-1;
+}
+
+.start:hover::after {
+  width: 100%;
 }
