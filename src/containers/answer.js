@@ -4,7 +4,7 @@ class Answer extends React.Component {
 
   render() {
     return(
-      <button onClick={e => this.props.advance(this.props['response'])}>
+      <button className="response" onClick={e => this.props.advance(this.props['response'])}>
         {this.props['response']}
       </button>
     )

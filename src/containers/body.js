@@ -115,7 +115,7 @@ class Body extends React.Component {
             <div className="snowflake">❆</div>
             <div className="snowflake">❄</div>
           </div>
-          Hey
+            <div>Test!</div>
         </div>
       )
     }

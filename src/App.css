@@ -143,19 +143,12 @@
 }
 
 /* NORMAL BODY */
-/* @keyframes header {
-  from {color: #668eab; */
-    /* transform: rotate(720deg); */
-/* }
-  to {color: #1b232b;}
-} */
-
 @keyframes Header {
     100% { background-position: 100vw 0px; }
 }
 
 @keyframes Enlarge {
-    100% { transform: scale(1.2);}
+    100% { transform: scale(1.1);}
 }
 
 .header {
@@ -214,4 +207,10 @@
 
 .start:hover::after {
   width: 100%;
+}
+
+.response {
+  color: #1b232b;
+  border: 1px solid #668eab;
+  border-radius: 2px;
 }

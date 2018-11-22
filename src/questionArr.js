@@ -1,51 +1,37 @@
 export const QuestionArr = [
   {
-    question: 'Question 1',
+    question: 'Is it really cold outside?',
     responses: {
-      response1: 'Response 1',
-      response2: 'Response 2',
+      response1: 'Totally',
+      response2: 'Nope',
     }
   },
   {
-    question: 'Question 2',
+    question: 'Is there already snow on the ground?',
     responses: {
-      response1: 'Response 1',
-      response2: 'Response 2',
+      response1: 'Yes!',
+      response2: 'No!',
     }
   },
   {
-    question: 'Question 3',
+    question: 'Was it supposed to snow today?',
     responses: {
-      response1: 'Response 1',
-      response2: 'Response 2',
+      response1: 'Absolutely Yes!',
+      response2: 'Absolutely No!',
     }
   },
   {
-    question: 'Question 4',
+    question: "Does it *look* like it's snowing?",
     responses: {
-      response1: 'Response 1',
-      response2: 'Response 2',
+      response1: 'You betchya',
+      response2: 'Negative',
     }
   },
   {
-    question: 'Question 5',
+    question: 'Was it snowing yesterday?',
     responses: {
-      response1: 'Response 1',
-      response2: 'Response 2',
-    }
-  },
-  {
-    question: 'Question 6',
-    responses: {
-      response1: 'Response 1',
-      response2: 'Response 2',
-    }
-  },
-  {
-    question: 'Question 7',
-    responses: {
-      response1: 'Response 1',
-      response2: 'Response 2',
+      response1: 'Fer sure',
+      response2: 'Naw',
     }
   }
 ]

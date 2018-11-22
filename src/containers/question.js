@@ -4,8 +4,9 @@ import Answer from './answer';
 class Question extends React.Component {
 
   render() {
+    console.log(this.props['currentQuestion']['responses']);
     const answer = Object.keys(this.props.currentQuestion['responses']).map((response, i) => {
-      return(<Answer key={i} response={response} select={this.select} currentQuestion={this.props.currentQuestion} advance={this.props.advance}/>)
+      return(<Answer key={i} response={this.props['currentQuestion']['responses'][response]} select={this.select} currentQuestion={this.props.currentQuestion} advance={this.props.advance}/>)
     })
 
     return(
