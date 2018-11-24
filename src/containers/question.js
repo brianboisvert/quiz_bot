@@ -11,7 +11,7 @@ class Question extends React.Component {
 
     return(
       <div>
-        <h1>
+        <h1 className="question">
           {this.props.currentQuestion['question']}
         </h1>
         <h2 className="answer-container">

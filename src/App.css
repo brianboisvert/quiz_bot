@@ -209,8 +209,12 @@
   width: 100%;
 }
 
+.question {
+  color: #668eab;
+}
+
 .response {
-  transition: background-color .7s ease;
+  transition: background-color .5s ease;
   color: #1b232b;
   border: 1px solid #668eab;
   border-radius: 2px;
@@ -232,4 +236,17 @@
   font-family: 'Indie Flower';
   text-align: center;
   color: #668eab;
+}
+
+@keyframes letter {
+  0% {
+    top: -10%
+  }
+  100% {
+    bottom: 100%
+  }
+}
+
+.result-letter {
+  animation: letter 5s linear 2s infinite alternate;
 }

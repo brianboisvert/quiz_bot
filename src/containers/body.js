@@ -2,7 +2,8 @@ import React from 'react';
 import LandingPage from './landingPage';
 import Question from './question';
 import { QuestionArr } from '../questionArr.js';
-import Snow from './snow'
+import Snow from './snow';
+import Result from './result';
 
 class Body extends React.Component {
 
@@ -54,8 +55,7 @@ class Body extends React.Component {
         <div>
           <Snow />
           <div className="result">
-            <h2>I don't know!</h2>
-            <h3>You should really check a weather app.</h3>
+          <Result />
           </div>
         </div>
       )
