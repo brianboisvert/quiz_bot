@@ -142,7 +142,7 @@
   animation-delay: 2.5s,5.5s
 }
 
-/* NORMAL BODY */
+/* BODY */
 @keyframes Header {
     100% { background-position: 100vw 0px; }
 }
@@ -189,7 +189,7 @@
 }
 
 .start:hover {
-  color:#1b232b;
+  color: #1b232b;
 }
 
 .start::after {
@@ -212,13 +212,18 @@
 .answer-container {
   margin: 0 auto;
   background: red;
-  width: 500px;
+  width: 125px;
 }
 
 .response {
+  transition: background-color .7s ease;
   color: #1b232b;
   border: 1px solid #668eab;
   border-radius: 2px;
+}
+
+.response:hover {
+  background-color: #668eab;
 }
 
 .response:nth-of-type(1) {
