@@ -2,6 +2,7 @@ import React from 'react';
 import LandingPage from './landingPage';
 import Question from './question';
 import { QuestionArr } from '../questionArr.js';
+import Snow from './snow'
 
 class Body extends React.Component {
 
@@ -33,28 +34,7 @@ class Body extends React.Component {
     if (!this.state.slide) {
       return (
         <div className="body">
-          <div className="snowflakes" aria-hidden="true">
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-          </div>
+          <Snow />
           <div>
             <LandingPage advance={this.advance} />
           </div>
@@ -64,28 +44,7 @@ class Body extends React.Component {
       const currentQuestion =  QuestionArr[this.state.slide - 1]
       return (
         <div className="body">
-          <div className="snowflakes" aria-hidden="true">
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-          </div>
+          <Snow />
           <Question currentQuestion={currentQuestion} advance={this.advance} slide={this.state.slide} />
         </div>
       )
@@ -93,30 +52,9 @@ class Body extends React.Component {
     else {
       return (
         <div>
-          <div className="snowflakes" aria-hidden="true">
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-            <div className="snowflake">❅</div>
-            <div className="snowflake">❆</div>
-            <div className="snowflake">❄</div>
-          </div>
+          <Snow />
           <div className="result">
-            <h2>I really don't know if it's going to snow!</h2>
+            <h2>I don't know!</h2>
             <h3>You should really check a weather app.</h3>
           </div>
         </div>
