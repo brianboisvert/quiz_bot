@@ -115,7 +115,10 @@ class Body extends React.Component {
             <div className="snowflake">❆</div>
             <div className="snowflake">❄</div>
           </div>
-            <div>Test!</div>
+          <div className="result">
+            <h2>I really don't know if it's going to snow!</h2>
+            <h3>You should really check a weather app.</h3>
+          </div>
         </div>
       )
     }

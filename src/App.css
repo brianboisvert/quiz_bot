@@ -209,12 +209,6 @@
   width: 100%;
 }
 
-.answer-container {
-  margin: 0 auto;
-  background: red;
-  width: 125px;
-}
-
 .response {
   transition: background-color .7s ease;
   color: #1b232b;
@@ -227,9 +221,15 @@
 }
 
 .response:nth-of-type(1) {
-  float: left;
+  margin-right: 5px;
 }
 
 .response:nth-of-type(2) {
-  float: right;
+  margin-left: 5px;
+}
+
+.result {
+  font-family: 'Indie Flower';
+  text-align: center;
+  color: #668eab;
 }
