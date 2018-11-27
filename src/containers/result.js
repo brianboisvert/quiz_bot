@@ -4,7 +4,7 @@ class Result extends React.Component {
   render() {
     return (
       <div>
-        <h2>
+        <h2 className="result-full">
           <span className="result-letter">I</span>
           <span className="result-letter"> </span>
           <span className="result-letter">d</span>

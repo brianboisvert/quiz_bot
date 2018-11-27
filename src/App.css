@@ -238,15 +238,24 @@
   color: #668eab;
 }
 
-@keyframes letter {
-  0% {
-    top: -10%
-  }
-  100% {
-    bottom: 100%
-  }
+
+@@keyframes letter {
+  100% {color: grey;}
+}
+
+.result-full {
+  color: blue;
+  background-color: pink;
+  animation-name: letter;
+  animation-duration: 4s;
+
+}
+
+/* @keyframes letter {
+  100% {transform: scale(2);}
 }
 
 .result-letter {
-  animation: letter 5s linear 2s infinite alternate;
-}
+  animation-name: letter;
+  animation-duration: 4s;
+} */
